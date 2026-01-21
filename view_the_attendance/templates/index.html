@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Viewer</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .button-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .subject-btn {
+            padding: 15px 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .subject-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .subject1-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .subject2-btn {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Attendance Viewer</h1>
+        <div class="button-group">
+            <a href="/view/subject1" class="subject-btn subject1-btn">Subject 1</a>
+            <a href="/view/subject2" class="subject-btn subject2-btn">Subject 2</a>
+        </div>
+    </div>
+</body>
+</html>
